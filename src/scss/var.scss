@@ -1,0 +1,58 @@
+$theme-color: #00D3AA;
+$assist-color: #15D1E8;
+$text-color-one: #333;
+$text-color-two: #4D4D4D;
+$text-color-three: #999;
+$line-color: #E6E6E6;
+$active-color: #00B793;
+@mixin div-shadow {
+    box-shadow: 0px 8px 18px rgba(0, 137, 110, 0.1);
+};
+body {
+    background-color: #F4F5F5;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    .before-login{
+        background-image: url(/imgs/bg.jpg);
+        width: 100vw;
+        height: calc(100vh - 84px);
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        top: 85px;
+        z-index: 1;
+        line-height: calc(100vh - 84px);
+        text-align: center;
+        color: white;
+        &>p {
+            font-size: 60px;
+            font-weight: bolder;
+            margin-top: -30px;
+        }
+        // display: none;
+    }
+}
+.add-note {
+    width: 64px;
+    height: 64px;
+    background-color: $assist-color;
+    border-radius: 32px;
+    text-align: center;
+    line-height: 64px;
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    box-shadow: 0px 12px 24px rgba(0, 137, 110, 0.3);
+    transition: all .3s ease;
+    &>img{
+        vertical-align: middle;
+        width: 28px;
+        height: 28px;
+        margin-top: -4px;
+    }
+    &:hover{
+        opacity: .8;
+        box-shadow: 0px 8px 18px rgba(0, 137, 110, 0.2);
+        transform: translateY(2px);
+        cursor: pointer;
+    }
+}
