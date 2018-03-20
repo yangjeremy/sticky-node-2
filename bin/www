@@ -12,7 +12,13 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+// var port = normalizePort(process.env.PORT || '3000');
+//3000是本地测试的端口
+
+
+var port = normalizePort(process.env.PORT || '3721');
+
+//3721是线上的端口
 app.set('port', port);
 
 /**
